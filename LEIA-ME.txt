@@ -1,0 +1,41 @@
+LABORATÓRIO DAS LENTES — VERSÃO FINAL COM DISPUTA ENTRE DUAS EQUIPES
+
+COMO ABRIR
+1. Extraia todos os arquivos desta pasta.
+2. Abra o arquivo index.html em um navegador atualizado.
+3. Não separe o HTML, CSS, JavaScript e a ilustração: eles precisam ficar juntos.
+
+DINÂMICA DA PARTIDA
+- Antes de jogar, as equipes podem estudar o guia científico, que também pode ser consultado durante a partida.
+- Cadastrem o nome das duas equipes.
+- A partida tem 12 desafios de Física. Em cada rodada, as duas equipes respondem à mesma pergunta.
+- A primeira equipe registra sua resposta; o jogo não mostra se ela acertou. Em seguida, a segunda equipe conversa e registra sua resposta. A equipe que começa alterna a cada pergunta.
+- Só depois das duas respostas o jogo revela o gabarito e a explicação comentada.
+- Cada resposta correta vale 10 pontos. Respostas erradas não retiram pontos.
+- A distribuição das alternativas corretas é equilibrada: em cada partida, há exatamente três respostas corretas em A, três em B, três em C e três em D. A posição das alternativas muda a cada partida.
+- Depois das duas respostas, uma peça do microscópio é liberada.
+- As equipes montam juntas o quebra-cabeça de 12 peças. A vez de encaixar alterna entre as equipes: uma peça para cada equipe, sucessivamente. Arraste a peça para o espaço com o mesmo número; em celulares, toque na peça e depois no espaço.
+- Com a imagem completa, começa a etapa final: cada equipe recebe uma parte sorteada do microscópio e responde qual é sua função. Cada resposta correta vale 5 pontos extras e o jogo mostra a explicação.
+- Vence a equipe com maior pontuação total. Se houver empate, o professor pode pedir uma explicação oral adicional sobre outra parte do microscópio.
+- O cronômetro marca 12 minutos como referência para a partida. Se o tempo terminar, o jogo avisa, mas permite concluir a rodada e a montagem sem perder o progresso.
+
+DICA DE PARTICIPAÇÃO
+As equipes devem trocar o porta-voz a cada rodada para que diferentes integrantes possam conversar e responder. Na montagem, os integrantes também podem se revezar no encaixe da peça da sua equipe.
+
+REQUISITOS PEDAGÓGICOS CONTEMPLADOS
+- Guia científico prévio e consulta durante a partida.
+- 12 desafios com gabarito comentado.
+- Peças liberadas conforme a resolução dos desafios.
+- Montagem de imagem de microscópio dividida em 12 partes.
+- Identificação final de componentes e explicação de suas funções.
+- Competição entre duas equipes, com turnos, pontuação, vitória e desempate.
+- Referências científicas disponíveis no manual do jogo.
+
+ARQUIVOS
+index.html — estrutura do jogo
+style.css — identidade visual e layout responsivo
+script.js — perguntas, pontuação e dinâmica
+microscopio.svg — ilustração usada no quebra-cabeça
+
+OBSERVAÇÃO PARA A ENTREGA
+A identificação da contribuição individual de cada integrante deve ser preenchida pelo grupo no relatório ou no manual impresso, conforme a divisão real das tarefas. O teste com outro grupo também deve ser realizado presencialmente e registrado pelos estudantes.

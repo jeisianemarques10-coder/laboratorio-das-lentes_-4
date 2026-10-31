@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#fff1f8"><title>Laboratório das Lentes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="sparkle s1">✦</div><div class="sparkle s2">✧</div><div class="sparkle s3">♡</div>
+<header class="topbar"><a class="brand" href="#"><span class="brand-mark">✿</span><span>Laboratório<br><b>das Lentes</b></span></a><div class="top-tag">PROJETO MULHER EM FOCO <span>•</span> FÍSICA</div><button class="soft-button" id="headerGuide">♡ Guia científico</button></header>
+<main>
+<section class="screen active" id="home">
+ <div class="hero">
+  <div class="hero-copy"><div class="eyebrow">✦ UMA MISSÃO DE DESCOBERTAS ✦</div><h1>O desafio da<br><em>microscopia!</em></h1>
+  <p>Aprenda sobre lentes, descubra como as imagens se formam e reconstrua um microscópio peça por peça.</p>
+  <div class="hero-pills"><span>🧩 Quebra-cabeça</span><span>🔬 12 desafios</span><span>⏱ 12 minutos</span></div>
+  <button class="main-button" id="goGuide">COMEÇAR PELO GUIA <span>→</span></button>
+  <div class="tiny-note">Uma experiência para aprender brincando. ♡</div></div>
+  <div class="hero-visual"><div class="bubble bubble-a">🔬</div><div class="bubble bubble-b">✧</div><div class="hero-circle"><img src="microscopio.svg" alt="Ilustração de um microscópio"></div><div class="hero-sticker">CIÊNCIA<br>É DESCOBERTA!</div></div>
+ </div>
+ <div class="home-bottom"><span>SESI BELO JARDIM · 2ª SÉRIE A</span><span>OBSERVAR • INVESTIGAR • DESCOBRIR</span></div>
+</section>
+
+<section class="screen" id="guide">
+ <div class="page-heading"><span class="eyebrow">📖 PREPARE-SE PARA A MISSÃO</span><h2>Seu guia <em>científico</em></h2><p>Leia este pequeno resumo antes de jogar. Você também poderá consultá-lo durante os desafios!</p></div>
+ <div class="guide-layout">
+  <nav class="guide-nav" id="guideNav">
+   <button class="guide-tab active" data-guide="microscope">🔬 O microscópio</button><button class="guide-tab" data-guide="lenses">✧ Lentes convergentes</button><button class="guide-tab" data-guide="focus">⌖ Foco e distância focal</button><button class="guide-tab" data-guide="images">◉ Formação de imagens</button><button class="guide-tab" data-guide="magnification">× Ampliação</button><button class="guide-tab" data-guide="health">♡ Microscopia e saúde</button>
+  </nav>
+  <article class="guide-article" id="guideArticle"></article>
+ </div>
+ <div class="guide-actions"><button class="text-button" id="guideHome">← Início</button><button class="main-button" id="guideContinue">ENTENDI! VAMOS JOGAR →</button></div>
+</section>
+
+<section class="screen" id="setup">
+ <div class="page-heading"><span class="eyebrow">🌷 ORGANIZEM A EQUIPE</span><h2>Quem vai <em>investigar?</em></h2><p>As duas equipes respondem a cada desafio. Cada uma conversa e registra sua própria resposta antes da revelação.</p></div>
+ <div class="setup-card"><label for="teamA">EQUIPE 01</label><input id="teamA" value="Equipe Azul" maxlength="24"><label for="teamB">EQUIPE 02</label><input id="teamB" value="Equipe Coral" maxlength="24"><div class="hint">🤝 Em cada rodada, as duas equipes terão uma vez para discutir e responder. Escolham um porta-voz diferente a cada pergunta. O jogo só revela o gabarito depois das duas respostas.</div><button class="main-button wide" id="launch">ENTRAR NO LABORATÓRIO ✨</button></div>
+</section>
+
+<section class="screen" id="game">
+ <div class="game-heading"><div><span class="eyebrow">🔬 MISSÃO EM ANDAMENTO</span><h2>Reconstrua o <em>microscópio</em></h2></div><div class="timer"><small>TEMPO</small><b id="timer">12:00</b></div></div>
+ <div class="game-grid">
+  <aside class="side-card"><div class="side-title">🏆 Placar</div><div class="score-line"><i class="dot pink"></i><span id="nameA">Equipe Rosa</span><b id="scoreA">0 pts</b></div><div class="score-line"><i class="dot purple"></i><span id="nameB">Equipe Lilás</span><b id="scoreB">0 pts</b></div>
+   <div class="progress-title">PROGRESSO DO QUEBRA-CABEÇA <b id="progressNum">0%</b></div><div class="progress"><span id="progressFill"></span></div><p class="side-caption" id="progressText">0 de 12 peças encaixadas</p>
+   <div class="piece-tray-title">🧩 PEÇAS LIBERADAS <small>Arraste para o lugar certo</small></div><div class="piece-tray" id="pieceTray"><div class="empty-tray">As peças aparecerão aqui<br>conforme vocês acertarem! ♡</div></div>
+   <button class="guide-mini" id="openGuideDuring">📖 Consultar guia científico</button>
+  </aside>
+  <section class="center-card">
+   <div class="puzzle-heading"><div><span class="eyebrow">MONTE A IMAGEM</span><h3>Quebra-cabeça do microscópio</h3></div><span class="piece-counter" id="pieceCounter">0 / 12</span></div>
+   <div class="puzzle-stage" id="puzzleStage"><div class="puzzle-hint" id="puzzleHint">As peças vão aparecer aqui!<br><small>Responda aos desafios para desbloqueá-las.</small></div></div>
+   <div class="puzzle-help">✦ Arraste uma peça liberada até o espaço com o mesmo número. No celular, toque na peça e depois no espaço correspondente.</div><div class="assembly-turn" id="assemblyTurn" aria-live="polite">Vez de encaixar: Equipe Azul</div>
+  </section>
+  <section class="question-card"><div class="question-top"><span id="questionNo">DESAFIO 01 / 12</span><span class="turn" id="turn">VEZ DA EQUIPE AZUL</span></div><div class="q-content"><div class="q-icon" id="qIcon">✧</div><div class="q-category" id="qCategory">FUNDAMENTOS DA ÓPTICA</div><h3 id="question">Carregando pergunta...</h3><div class="round-status" id="roundStatus" aria-live="polite">As duas equipes responderão antes da revelação.</div><div class="options" id="options"></div><div class="feedback" id="feedback" aria-live="polite"></div><button class="main-button next" id="next" disabled>PRÓXIMO DESAFIO →</button></div><div class="q-foot"><span>🤝 Uma resposta por equipe</span><span id="attempt">RODADA 1 DE 12</span></div></section>
+ </div>
+</section>
+
+<section class="screen" id="finalChallenge">
+ <div class="page-heading"><span class="eyebrow">🔎 ETAPA FINAL · IDENTIFICAÇÃO</span><h2>Conhecem cada parte do <em>microscópio?</em></h2><p>Com a imagem montada, cada equipe vai identificar uma peça e explicar sua função. Esta etapa vale 5 pontos extras.</p></div>
+ <div class="final-check-card">
+  <div class="final-check-top"><span id="finalTeamLabel">VEZ DA EQUIPE AZUL</span><span>+5 PONTOS</span></div>
+  <div class="part-focus"><span class="eyebrow">PEÇA SORTEADA</span><h3 id="finalPartName">Ocular</h3><p id="finalPartPrompt">Qual é a função dessa parte no microscópio?</p></div>
+  <div class="final-options" id="finalOptions"></div>
+  <div class="final-feedback" id="finalFeedback" aria-live="polite"></div>
+  <button class="main-button wide" id="finalNext" disabled>CONFIRMAR RESPOSTA →</button>
+ </div>
+ <p class="final-check-note">Conversem em equipe antes de escolher. A resposta e a explicação aparecem depois da confirmação.</p>
+</section>
+
+<section class="screen" id="finish">
+ <div class="finish-card"><div class="finish-flower">✿</div><span class="eyebrow">MISSÃO CONCLUÍDA!</span><h2>Olha só o que<br>vocês <em>construíram!</em></h2><p id="winner"></p>
+ <div class="completed-picture"><img src="microscopio.svg" alt="Microscópio reconstruído"></div>
+ <div class="final-scores"><div><b id="finalA">0</b><small id="finalNameA">EQUIPE ROSA</small></div><div><b id="finalB">0</b><small id="finalNameB">EQUIPE LILÁS</small></div><div><b id="finalTime">00:00</b><small>TEMPO UTILIZADO</small></div></div>
+ <h3>As partes do microscópio</h3><div class="part-list" id="partList"></div>
+ <button class="main-button" id="playAgain">JOGAR NOVAMENTE ↻</button> <button class="text-button" id="finishGuide">Ver guia e referências ↗</button>
+ </div>
+</section>
+
+<section class="screen" id="manual">
+ <div class="page-heading"><span class="eyebrow">📚 COMO FUNCIONA</span><h2>Manual do <em>jogo</em></h2><p>Regras rápidas para uma partida justa e divertida.</p></div>
+ <div class="manual-grid">
+  <article><b>01 · Participantes</b><p>Duas equipes com quantidade semelhante de participantes, usando o mesmo dispositivo.</p></article>
+  <article><b>02 · Preparação</b><p>Antes da partida, todos podem ler o guia científico para conhecer os conceitos.</p></article>
+  <article><b>03 · Rodada dupla</b><p>As duas equipes respondem à mesma pergunta. A primeira registra sua escolha sem ver o gabarito; depois, a segunda responde. A ordem se inverte na pergunta seguinte.</p></article>
+  <article><b>04 · Pontuação</b><p>Cada equipe ganha 10 pontos por resposta correta. Não há perda de pontos por erro. O gabarito só aparece depois que as duas equipes responderem.</p></article>
+  <article><b>05 · Quebra-cabeça coletivo</b><p>Depois das duas respostas, uma peça é liberada. As equipes se revezam para encaixar uma peça por vez no microscópio, colaborando na montagem.</p></article>
+  <article><b>06 · Identificação final e vitória</b><p>Troquem o porta-voz a cada pergunta para que todos participem. Ao completar as 12 peças, cada equipe responde a um desafio final: identificar uma parte sorteada e explicar sua função. Essa etapa vale 5 pontos extras. Vence quem tiver mais pontos ao final; se ainda houver empate, as equipes fazem uma explicação oral adicional escolhida pelo professor.</p></article>
+ </div>
+ <div class="references"><h3>Fontes para estudar</h3><ol>
+ <li>OPENSTAX. <i>University Physics, Volume 3: Thin Lenses.</i> <a href="https://openstax.org/books/university-physics-volume-3/pages/2-4-thin-lenses" target="_blank">Acessar material</a>.</li>
+ <li>OPENSTAX. <i>University Physics, Volume 3: Microscopes and Telescopes.</i> <a href="https://openstax.org/books/university-physics-volume-3/pages/2-8-microscopes-and-telescopes" target="_blank">Acessar material</a>.</li>
+ <li>NIKON MICROSCOPYU. <i>Microscope Components.</i> <a href="https://www.microscopyu.com/microscopy-basics/components" target="_blank">Acessar material</a>.</li>
+ <li>NATIONAL CANCER INSTITUTE. <i>Cervical Cancer Diagnosis.</i> <a href="https://www.cancer.gov/types/cervical/diagnosis" target="_blank">Acessar material</a>.</li>
+ </ol><p>O microscópio auxilia a observação de células e tecidos. A interpretação dos exames e o diagnóstico devem ser realizados por profissionais de saúde.</p></div>
+ <button class="text-button" id="manualBack">← Voltar</button>
+</section>
+</main>
+<footer><span>LABORATÓRIO DAS LENTES ♡</span><span>SESI BELO JARDIM · FÍSICA</span></footer>
+<div class="modal" id="guideModal"><div class="modal-card"><button class="modal-close" id="closeModal">×</button><span class="eyebrow">📖 CONSULTA RÁPIDA</span><h2>Guia científico</h2><div class="modal-tabs" id="modalTabs"></div><article id="modalArticle"></article></div></div>
+<script src="script.js"></script>
+</body></html>

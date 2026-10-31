@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800">
+<defs>
+ <linearGradient id="body" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff5ff"/><stop offset=".48" stop-color="#c7b5ef"/><stop offset="1" stop-color="#7567a9"/></linearGradient>
+ <linearGradient id="dark" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#554c7b"/><stop offset="1" stop-color="#17172f"/></linearGradient>
+ <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d9ffff"/><stop offset=".5" stop-color="#9fe4ef"/><stop offset="1" stop-color="#aa8bdf"/></linearGradient>
+ <linearGradient id="base" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f9edff"/><stop offset="1" stop-color="#8e81bd"/></linearGradient>
+ <filter id="shadow"><feGaussianBlur stdDeviation="12"/></filter>
+</defs>
+<ellipse cx="310" cy="737" rx="210" ry="27" fill="#6f5caa" opacity=".22" filter="url(#shadow)"/>
+<!-- base -->
+<path d="M104 695 Q120 650 178 643 L430 643 Q492 653 508 701 L508 728 Q505 747 481 750 L125 750 Q96 746 104 695Z" fill="url(#base)" stroke="#665b91" stroke-width="9"/>
+<path d="M142 705 H468" stroke="#fff" stroke-width="9" opacity=".65" stroke-linecap="round"/>
+<!-- arm -->
+<path d="M390 665 Q444 603 432 520 L415 338 Q408 267 351 230 L282 185 L326 113 L418 169 Q489 216 497 322 L520 520 Q532 645 450 691Z" fill="url(#dark)" stroke="#b9a8e7" stroke-width="12"/>
+<path d="M398 641 Q455 582 438 510 L419 337 Q412 279 365 248" fill="none" stroke="#8e7bc1" stroke-width="14" opacity=".7"/>
+<!-- foot/neck -->
+<path d="M172 665 Q160 584 217 532 L295 462 Q322 438 345 460 L390 503 Q410 525 390 548 L297 639 Q267 671 269 702Z" fill="url(#body)" stroke="#6d6297" stroke-width="11"/>
+<!-- tube -->
+<path d="M214 229 L292 88 Q307 62 334 77 L381 103 Q406 117 391 146 L310 293Z" fill="url(#dark)" stroke="#c8b9eb" stroke-width="12"/>
+<path d="M228 221 L303 91" stroke="#fff" stroke-width="10" opacity=".28"/>
+<!-- eyepiece -->
+<path d="M290 91 L317 35 Q329 12 352 24 L417 60 Q438 73 424 97 L395 151Z" fill="url(#glass)" stroke="#e9e2ff" stroke-width="12"/>
+<path d="M318 42 L410 92" stroke="#fff" stroke-width="12" opacity=".55"/>
+<path d="M302 104 L393 157" stroke="#50466f" stroke-width="22" stroke-linecap="round"/>
+<!-- head -->
+<path d="M245 252 Q263 209 310 230 L378 268 Q410 287 390 325 L348 399 L223 329Z" fill="#7770a7" stroke="#e1d4ff" stroke-width="11"/>
+<!-- revolver -->
+<path d="M227 331 Q240 301 269 314 L384 375 Q408 389 393 418 L370 453 L210 373Z" fill="url(#dark)" stroke="#cfc2ef" stroke-width="10"/>
+<!-- objectives -->
+<g stroke="#d7cafa" stroke-width="9">
+ <path d="M250 375 L223 453 Q218 475 239 483 L263 491 Q284 493 292 472 L315 404Z" fill="url(#glass)"/>
+ <path d="M303 402 L290 478 Q286 501 309 506 L331 510 Q351 507 355 485 L362 429Z" fill="url(#glass)"/>
+ <path d="M357 427 L365 492 Q368 514 390 511 L410 506 Q429 499 423 477 L405 443Z" fill="url(#glass)"/>
+</g>
+<!-- stage -->
+<path d="M158 510 L445 510 L420 548 L181 548Z" fill="#302d52" stroke="#cfc3ef" stroke-width="10"/>
+<path d="M185 502 L418 502" stroke="#aef5f2" stroke-width="9" stroke-linecap="round"/>
+<rect x="271" y="483" width="82" height="17" rx="6" fill="#f4eaff" stroke="#75689d" stroke-width="6"/>
+<!-- condenser and light -->
+<path d="M260 551 L363 551 L344 608 L280 608Z" fill="url(#dark)" stroke="#cbbde9" stroke-width="9"/>
+<ellipse cx="312" cy="614" rx="48" ry="16" fill="#a4f2f1" stroke="#d8faff" stroke-width="7"/>
+<path d="M310 610 L310 642" stroke="#f6e6ff" stroke-width="8"/>
+<!-- focus knobs -->
+<circle cx="445" cy="449" r="49" fill="#292642" stroke="#c8b9e9" stroke-width="12"/>
+<circle cx="445" cy="449" r="18" fill="#9d8acb"/>
+<circle cx="432" cy="584" r="31" fill="#282440" stroke="#c8b9e9" stroke-width="10"/>
+<!-- arm detail -->
+<path d="M401 290 Q455 320 454 388" fill="none" stroke="#e0d2ff" stroke-width="7" opacity=".55"/>
+<!-- stage clips -->
+<path d="M172 493 L208 493 L208 515" fill="none" stroke="#f4e8ff" stroke-width="10" stroke-linecap="round"/>
+<path d="M393 493 L427 493 L427 515" fill="none" stroke="#f4e8ff" stroke-width="10" stroke-linecap="round"/>
+<!-- labels glints -->
+<g fill="#fff" opacity=".85"><circle cx="150" cy="180" r="5"/><circle cx="485" cy="180" r="4"/><circle cx="117" cy="570" r="4"/><path d="M95 300 l7 16 16 7-16 7-7 16-7-16-16-7 16-7Z" opacity=".6"/></g>
+</svg>
